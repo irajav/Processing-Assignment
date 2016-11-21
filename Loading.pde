@@ -33,12 +33,15 @@ class Loading
   {
       stroke(255);
       noFill();
-      rect(200,200,200,20);
+      rect(width/2-100,250,200,20);
       
       noStroke();
-      fill(255,100);
+      fill(random(0,255));
       w += 5;
-      rect(200,200,w,20);
+      rect(width/2-100,250,w,20);
+      
+      textSize(60);
+      text("LOADING....", width/2-140, height/2);
     
   }
   

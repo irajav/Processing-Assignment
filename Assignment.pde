@@ -1,7 +1,11 @@
+//import processing.sound.*;
+//SoundFile satellite;
+
 Stars[] myStars = new Stars[200];
 Enter e;
 Loading l;
 Welcome wel;
+Frame f;
 
 boolean b;
 
@@ -20,6 +24,10 @@ void setup()
   e = new Enter();
   l = new Loading();
   wel = new Welcome();
+  f = new Frame();
+  
+//  satellite = new SoundFile(this, "satellite.wav");
+
 
 }
 
@@ -32,12 +40,14 @@ void draw()
   {
     myStars[i].show();
   }
+
   
   e.enter();
   
    if(b == true)
   {
     l.loading();
+
   }
   
 }

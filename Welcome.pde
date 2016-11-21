@@ -2,7 +2,8 @@ class Welcome
 {
   void welcome()
   {
-    fill(255);
+    fill(0);
     rect(0,0,width,height);
+    f.frame();
   }
 }
