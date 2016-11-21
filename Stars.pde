@@ -16,7 +16,7 @@ class Stars
   
   void display()
   {
-    fill(127);
+    fill(color(random(0,255), 0 , random(0,225)));
     stroke(255);
     strokeWeight(1);
     

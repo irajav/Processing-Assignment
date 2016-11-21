@@ -1,5 +1,4 @@
 Stars[] myStars = new Stars[200];
-
 void setup()
 {
   fullScreen();
