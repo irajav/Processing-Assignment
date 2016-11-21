@@ -18,7 +18,7 @@ class Stars
   {
     fill(color(random(0,255), 0 , random(0,225)));
     stroke(255);
-    strokeWeight(1);
+    strokeWeight(0.5);
     
     beginShape();
     vertex(x, y-6.25);

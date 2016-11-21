@@ -1,4 +1,6 @@
 Stars[] myStars = new Stars[200];
+Enter e;
+
 void setup()
 {
   fullScreen();
@@ -8,6 +10,8 @@ void setup()
   {
     myStars[i] = new Stars(random(width), random(height));
   }
+  
+  e = new Enter();
 
 }
 
@@ -22,5 +26,6 @@ void draw()
     myStars[i].show();
   }
 
+  e.enter();
   
 }
