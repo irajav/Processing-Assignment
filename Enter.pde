@@ -12,8 +12,10 @@ class Enter
     ang2 += 2;
     ang3 += 3;
     
+
+   
     noStroke();
-    fill(#052F64);
+    fill(80);
     ellipse(x,y,100,100);
     fill(255);
     textSize(10);

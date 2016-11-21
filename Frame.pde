@@ -8,6 +8,9 @@ class Frame
  
     int x2frame = 20;
     int y2frame = 20;
+    
+    int cols = 15;
+    int rows = 15;
 
     stroke(255,137,216);
     strokeWeight(1);
@@ -22,5 +25,12 @@ class Frame
     line(x2frame, y2frame, x2frame, height-y2frame);
     line(x2frame, height-y2frame, width-x2frame, height-y2frame);
     line(width-x2frame, height-y2frame, width-x2frame, y2frame);
+    
+   for ( int i=1; i<cols; i++) {
+    for ( int j=1; j<rows; j++) {
+      fill ( 255);
+      ellipse ( i*(width/cols), j*(height/rows), 2,2);
+    }
+   }
   }
 }
