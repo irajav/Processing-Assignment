@@ -1,6 +1,7 @@
 Stars[] myStars = new Stars[200];
 Enter e;
 Loading l;
+Welcome wel;
 
 boolean b;
 
@@ -18,6 +19,7 @@ void setup()
   
   e = new Enter();
   l = new Loading();
+  wel = new Welcome();
 
 }
 

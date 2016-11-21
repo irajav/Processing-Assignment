@@ -1,37 +1,47 @@
 class Loading
 {
   float angle;
-  boolean loading = false;
+  float counter = 0;
+  int w = 10;
   
   void loading()
   {
-    noStroke();
-    fill(20);
-    rect(0,0,width,height);
-    
-    for(int i = 0; i <200; i++)
-    {
-      myStars[i].show();
-    }
-    
+      noStroke();
+      fill(20);
+      rect(0,0,width,height);
+      
+      for(int i = 0; i <200; i++)
+      {
+        myStars[i].show();
+      }
+      
 
-    rect(43,138,204,24);
-    fill(255);
-    int fillX = ((frameCount%500)/3*10);
-    rect(246,140,fillX-205,20);
+      
+      if(w == 200)
+      {
+        wel.welcome();
+      }
+      else
+      {
+        loadingbar();
+        
+      }
 
-  
-  
-  translate(width/2, height/2);
-  rotate(angle);
-  strokeWeight(2);
-  stroke(255);
-  line(0,0,100,0);
-  angle += 0.1;
-  
-
-  
   }
+  
+  void loadingbar()
+  {
+      stroke(255);
+      noFill();
+      rect(200,200,200,20);
+      
+      noStroke();
+      fill(255,100);
+      w += 5;
+      rect(200,200,w,20);
+    
+  }
+  
   
 
 }
