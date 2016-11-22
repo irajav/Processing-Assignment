@@ -13,12 +13,11 @@ class Welcome
     fill(255);
     text("Welcome Human", x-100, y-200);
     
-    buttons();
-
+  
         
   }
   
-  void buttons()
+  void button1()
   {
         
     stroke(#1F7BF0);
@@ -32,7 +31,13 @@ class Welcome
     vertex(50, 80);
     vertex(30, 60);
     endShape(CLOSE);
-    
+
+
+  }
+  
+  void button2()
+  {
+        
     translate(x-800, y-200);
     beginShape();
     vertex(30, 20);
@@ -42,7 +47,10 @@ class Welcome
     vertex(50, 80);
     vertex(30, 60);
     endShape(CLOSE);
-    
+  }
+  
+  void button3()
+  {    
     translate(x-90, y-565);
     beginShape();
     vertex(30, 20);
@@ -52,6 +60,11 @@ class Welcome
     vertex(50, 80);
     vertex(30, 60);
     endShape(CLOSE);
+    
+  }
+  
+  void button4()
+  {
     
     translate(x-550, y-205);
     beginShape();
