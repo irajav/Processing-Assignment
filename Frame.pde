@@ -26,11 +26,11 @@ class Frame
     line(x2frame, height-y2frame, width-x2frame, height-y2frame);
     line(width-x2frame, height-y2frame, width-x2frame, y2frame);
     
-   for ( int i=1; i<cols; i++) {
-    for ( int j=1; j<rows; j++) {
-      fill ( 255);
-      ellipse ( i*(width/cols), j*(height/rows), 2,2);
-    }
-   }
+  // for ( int i=1; i<cols; i++) {
+  //   for ( int j=1; j<rows; j++) {
+ //     fill ( 255);
+   //   ellipse ( i*(width/cols), j*(height/rows), 1,1);
+//    }
+  // }
   }
 }
