@@ -7,6 +7,8 @@ Loading l;
 Welcome wel;
 Frame f;
 PImage img;
+Clock c;
+World world;
 
 boolean b;
 
@@ -27,6 +29,8 @@ void setup()
   l = new Loading();
   wel = new Welcome();
   f = new Frame();
+  c = new Clock();
+  world = new World();
   
 //  satellite = new SoundFile(this, "satellite.wav");
 

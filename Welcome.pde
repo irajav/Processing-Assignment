@@ -12,8 +12,21 @@ class Welcome
     textSize(15);
     fill(255);
     text("Welcome Human", x-100, y-200);
+
     
-  
+    if(mouseX > x-330 & mouseX < x-230 && mouseY > y-140 && mouseY < y-60) 
+    {
+      c.clock();
+    }
+    
+    if(mouseX > x-790)
+    {
+      m.map();
+    }
+    button1();
+    button2();
+    button3();
+    button4();
         
   }
   

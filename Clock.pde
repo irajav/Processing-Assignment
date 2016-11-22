@@ -3,8 +3,8 @@ class Clock
 {
   void clock()
   {
-    int cx = width - 250;
-    int cy = 230;
+    int cx = width - 700;
+    int cy = 450;
     float secondsRadius;
     float minutesRadius;
     float hoursRadius;
