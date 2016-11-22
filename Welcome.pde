@@ -9,6 +9,9 @@ class Welcome
     noStroke();
     rect(0,0,width,height);
     f.frame();
+    textSize(15);
+    fill(255);
+    text("Welcome Human", x-100, y-200);
     
     stroke(#1F7BF0);
     noFill();
@@ -51,6 +54,8 @@ class Welcome
     vertex(50, 80);
     vertex(30, 60);
     endShape(CLOSE);
+    
+
         
   }
 }
