@@ -6,7 +6,7 @@ Enter e;
 Loading l;
 Welcome wel;
 Frame f;
-
+PImage img;
 
 boolean b;
 
@@ -16,6 +16,7 @@ void setup()
   frameRate(10);
   
   b = false;
+  img = loadImage("world.png");
   
   for(int i = 0; i < 200; i++)
   {
