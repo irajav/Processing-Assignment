@@ -13,6 +13,14 @@ class Welcome
     fill(255);
     text("Welcome Human", x-100, y-200);
     
+    buttons();
+
+        
+  }
+  
+  void buttons()
+  {
+        
     stroke(#1F7BF0);
     noFill();
     translate(x-340, y-150);
@@ -54,8 +62,6 @@ class Welcome
     vertex(50, 80);
     vertex(30, 60);
     endShape(CLOSE);
-    
-
-        
   }
+    
 }
