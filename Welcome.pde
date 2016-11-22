@@ -9,6 +9,7 @@ class Welcome
     noStroke();
     rect(0,0,width,height);
     f.frame();
+    g.grid();
     textSize(15);
     fill(255);
     text("Welcome Human", x-100, y-200);
@@ -38,6 +39,7 @@ class Welcome
     stroke(#1F7BF0);
     noFill();
     translate(x-340, y-150);
+    //text("CLOCK", 35, 50);
     beginShape();
     vertex(30, 20);
     vertex(90, 20);
@@ -46,6 +48,7 @@ class Welcome
     vertex(50, 80);
     vertex(30, 60);
     endShape(CLOSE);
+
 
 
   }
