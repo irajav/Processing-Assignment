@@ -19,10 +19,12 @@ class Welcome
       c.clock();
     }
     
-    if(mouseX > x-430 && mouseX < x-320 )
+    if(mouseX > x-430 && mouseX < x-320 && mouseY > y+45 && mouseY < y+110 )
     {
       world.world();
     }
+    
+    
     button1();
     button2();
     button3();
