@@ -19,9 +19,9 @@ class Welcome
       c.clock();
     }
     
-    if(mouseX > x-790)
+    if(mouseX > x-430 && mouseX < x-320 )
     {
-      m.map();
+      world.world();
     }
     button1();
     button2();

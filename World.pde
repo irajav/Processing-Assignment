@@ -22,21 +22,15 @@ class World
           
         fill(color(random(0,255), random(0,137), random(0,216)));
         textSize(18);
-        text("Show Infected Countries", 72, 320);
+        text("Infected Countries", 72, 320);
         
-        mousePressed();
-  }
-  
-  void display()
-  {
-    
-    int dot = 5;
+            int dot = 5;
     color d = color(#FF2E2E);
     int tsize = 10;
     int dist = 3;
    
    image(img, 65, 66, 310, 230);
-   noStroke();
+   strokeWeight(4);
    fill(d);
    textSize(tsize);
    ellipse(325,170,dot,dot);
@@ -52,32 +46,10 @@ class World
    ellipse(140,150,dot,dot);
    text("USA", 140+dist,150);
    
-   
-
-  }
-  
-  
-  void display2()
-  {
-
-   image(img, 65, 66, 310, 230);
-
-  }
-    
-    
-      void mousePressed()
-  {
         
-    if(mouseX > 70 && mouseX < 300 && mouseY < 325 && mouseY > 305 )
-    {
-              display();
-    }
-    else
-    {
-                 
-            display2();
-    }
   }
+  
+ 
   
   
 
