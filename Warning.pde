@@ -1,9 +1,11 @@
 class Warning
 {
+    int x = width/2;
+    int y = height/2 + 250;
+    
   void warning()
   {
-    int x = width/2;
-    int y = height/2;
+
     color c = color(255,137,216);
     color c2 = color(random(0,255), random(0,137), random(0,216));
     int[] balls = {15, 15, 15, 15, 15, 15, 
@@ -43,6 +45,6 @@ class Warning
   
   void display()
   {
-    image(img2, 610, 168, 20, 20);
+    image(img2, x-70, y-215, 20, 20);
   }
 }
