@@ -10,6 +10,7 @@ Grid g;
 PImage img;
 Clock c;
 World world;
+Warning warning;
 
 boolean b;
 
@@ -33,6 +34,7 @@ void setup()
   c = new Clock();
   world = new World();
   g = new Grid();
+  warning = new Warning();
   
 //  satellite = new SoundFile(this, "satellite.wav");
 

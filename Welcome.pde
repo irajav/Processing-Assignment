@@ -19,10 +19,13 @@ class Welcome
     {
       c.clock();
     }
-    
-    if(mouseX > x-430 && mouseX < x-320 && mouseY > y+45 && mouseY < y+110 )
+    else if(mouseX > x-430 && mouseX < x-320 && mouseY > y+45 && mouseY < y+110 )
     {
       world.world();
+    }
+    else
+    {
+      warning.warning();
     }
     
     
@@ -55,7 +58,7 @@ class Welcome
   
   void button2()
   {
-        
+    
     translate(x-800, y-200);
     beginShape();
     vertex(30, 20);
