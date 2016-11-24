@@ -43,6 +43,6 @@ class Warning
   
   void display()
   {
-    image(img, 610, 168, 20, 20);
+    image(img2, 610, 168, 20, 20);
   }
 }

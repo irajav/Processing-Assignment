@@ -8,6 +8,7 @@ Welcome wel;
 Frame f;
 Grid g;
 PImage img;
+PImage img2;
 Clock c;
 World world;
 Warning warning;
@@ -21,6 +22,7 @@ void setup()
   
   b = false;
   img = loadImage("world.png");
+  img2 = loadImage("skeleton.jpg");
   
   for(int i = 0; i < 200; i++)
   {
