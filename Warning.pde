@@ -1,6 +1,6 @@
 class Warning
 {
-    int x = width/2;
+    int x = width/2-20;
     int y = height/2 + 250;
     
   void warning()

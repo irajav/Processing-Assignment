@@ -15,13 +15,17 @@ class Welcome
     text("Welcome Human", x-100, y-200);
 
     
-    if(mouseX > x-330 & mouseX < x-230 && mouseY > y-140 && mouseY < y-60) 
+    if(mouseX > x-330 && mouseX < x-230 && mouseY > y-140 && mouseY < y-60) 
     {
       c.clock();
     }
     else if(mouseX > x-430 && mouseX < x-320 && mouseY > y+45 && mouseY < y+110 )
     {
       world.world();
+    }
+    else if(mouseX > x+160 && mouseX < x+255 && mouseY > y-140 && mouseY < y-60 )
+    {
+      scan.scan();
     }
     else
     {
