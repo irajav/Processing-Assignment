@@ -25,11 +25,44 @@ class Scan
     vertex(x-60, y-225);
     endShape();
     
+    //spine
     ellipse(x-30, y-160, 50,5);
     ellipse(x-30, y-150, 50, 5);
     ellipse(x-30, y-140, 50,5);
     
-  //  beginShape();
+    //pelvic
+    beginShape();
+    vertex(x-72, y-130);
+    vertex(x+12, y-130);
+    vertex(x+12, y-110);
+    vertex(x-30, y-80);
+    vertex(x-72, y-110);
+    vertex(x-72, y-130);
+    endShape();
+    
+    
+    //left leg
+    beginShape();
+    vertex(x-68, y-100);
+    vertex(x-36, y-70);
+    vertex(x-36, y-30);
+    vertex(x-68, y-30);
+    vertex(x-68, y-100);
+    endShape();
+    
+    //right leg
+    beginShape();
+    vertex(x-24, y-70);
+    vertex(x+9, y-100);
+    vertex(x+9, y-30);
+    vertex(x-24, y-30);
+    vertex(x-24, y-70);
+    endShape();
+    
+    //left arm
+    ellipse(x-82, y-170, 10,90);
+   //right arm
+    ellipse(x+22, y-170,10,90);
     
     
     
