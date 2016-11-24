@@ -2,6 +2,9 @@ class Scan
 {
   float x = width/2;
   float y = height/2 + 200;
+  float w = 50;
+  float speed = 20;
+      float rectY = y-300;   
   
   void scan()
   {
@@ -64,8 +67,7 @@ class Scan
    //right arm
     ellipse(x+22, y-170,10,90);
     
-    
-    
+
     stroke(255,137,216);
     line(x-120, y-300, x-120, y+60);
     line(x-100, y-300, x-100, y+60);
@@ -96,6 +98,21 @@ class Scan
     line(x-140, y, x+80, y);
     line(x-140, y+20, x+80, y+20);
     line(x-140, y+40, x+80, y+40);
+    
+        fill(130);
+    
+
+    
+    rect(x-140, rectY, 220,20);
+    
+    rectY += speed;
+    
+    if(rectY+20 > y+40 || rectY < y-280)
+    {
+      speed = -speed;
+    }
+    
+ 
     
     
     
