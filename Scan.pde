@@ -8,6 +8,32 @@ class Scan
     fill(0);
     rect(x-140,y-300, 220,360);
     
+    
+    stroke(255);
+    
+    //head
+    ellipse(x-30,y-260, 40,50);
+    
+    //body
+    beginShape();
+    vertex(x-60,y-225);
+    vertex(x, y-225);
+    vertex(x+12, y- 200);
+    vertex(x+12, y-170);
+    vertex(x-72, y-170);
+    vertex(x-72, y-200);
+    vertex(x-60, y-225);
+    endShape();
+    
+    ellipse(x-30, y-160, 50,5);
+    ellipse(x-30, y-150, 50, 5);
+    ellipse(x-30, y-140, 50,5);
+    
+  //  beginShape();
+    
+    
+    
+    stroke(255,137,216);
     line(x-120, y-300, x-120, y+60);
     line(x-100, y-300, x-100, y+60);
     line(x-80, y-300, x-80, y+60);
@@ -18,6 +44,7 @@ class Scan
     line(x+20, y-300, x+20, y+60);
     line(x+40, y-300, x+40, y+60);
     line(x+60, y-300, x+60, y+60);
+    
     
     line(x-140, y-280, x+80, y-280);
     line(x-140, y-260, x+80, y-260);
@@ -36,7 +63,8 @@ class Scan
     line(x-140, y, x+80, y);
     line(x-140, y+20, x+80, y+20);
     line(x-140, y+40, x+80, y+40);
-
+    
+    
     
     
     
