@@ -28,11 +28,11 @@ String[] file = {"weapon1.png", "weapon2.png", "weapon3.png", "weapon4.png", "we
 PImage[] images = new PImage[file.length];
 
 String[] guns = {
-  "Name: Beretta Xtrema 2 \n Cartride: 12 gauge", 
-  "Name: Blaser F3 \n Cartridge: 12 gauge 20 gauge 28 gauge",
-  "Name: Browning Auto-5 \n Cartridge: 12 gauge 16 gauge 20 gauge",
-  "Name: Browning Double Automatic Shot gun \n Cartridge: 12 gauge",
-  "Name: Heckler & Koch FABARM FP6 \n Cartridge: 12 gauge"
+  " Name: Beretta Xtrema 2 \n Manufacturer: Fabbrica d'Armi Pietro Beretta \n Cartride: 12 gauge", 
+  " Name: Blaser F3 \n Manufacturer: Blaser Jagdwaffen \n Cartridge: 12 gauge 20 gauge 28 gauge",
+  " Name: Browning Auto-5 \n Manufactuer: Browning Arms Company \n Cartridge: 12 gauge 16 gauge 20 gauge",
+  " Name: Browning Double Automatic Shot gun \n Manufacturer: Browning Arms Company \n Cartridge: 12 gauge",
+  " Name: Heckler & Koch FABARM FP6 \n Manufacturer: Fabbrica Bresciana Armi \n Cartridge: 12 gauge"
   };
   
 int index = 0;
