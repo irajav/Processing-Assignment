@@ -1,7 +1,15 @@
 class World
 {
+  PFont font;
+  
   void world()
   {
+    
+    
+    
+      font = loadFont("FranklinGothic-Book-10.vlw");
+  textFont(font, 7);
+   fill(#1F7BF0);
     int x; 
     int y;
     int x2 = width/2;
@@ -9,8 +17,8 @@ class World
     color c = color(250, 197, 232);
     
     int dot = 5;
-    color d = color(#FF2E2E);
-    int tsize = 10;
+    color d = color(#E30000);
+  //  int tsize = 10;
     int dist = 3;
     
 
@@ -33,7 +41,7 @@ class World
    image(img, x2-170, y2+10, 310, 230);
    noStroke();
    fill(d);
-   textSize(tsize);
+ //  textSize(tsize);
    
    pushMatrix();
    translate(x2-235, y2-60);
@@ -42,8 +50,8 @@ class World
    text("MANILA", 325+dist, 170);
    ellipse(308,150,dot,dot);
    text("CHINA", 308+dist,150);
-   ellipse(280, 115, dot, dot);
-   text("RUSSIA", 280+dist, 115);
+   ellipse(280, 105, dot, dot);
+   text("RUSSIA", 280+dist, 105);
    ellipse(224,112,dot,dot);
    text("NORWAY", 224+dist, 112);
    ellipse(173,210,dot,dot);
