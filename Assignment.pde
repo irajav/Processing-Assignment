@@ -4,7 +4,7 @@
 Stars[] myStars = new Stars[200];
 Enter e;
 Loading l;
-Welcome wel;
+Welcome welcome;
 Frame f;
 Grid g;
 PImage img;
@@ -16,6 +16,7 @@ Warning warning;
 Scan scan;
 Fingerprint fingerprint;
 Weapons weapons;
+Message message;
 
 boolean b;
 
@@ -36,6 +37,13 @@ String[] guns = {
   };
   
 int index = 0;
+
+String[] wel = {
+  "Welcome back, Human!", 
+  "Accessing data...",
+  };
+  
+  int wel_index = 0;
 
 
 void setup()
@@ -70,11 +78,16 @@ void setup()
     {
       printArray(guns);
     }
+    
+    for(int i = 0; i < wel.length; i++)
+    {
+      printArray(wel);
+    }
   
   
   e = new Enter();
   l = new Loading();
-  wel = new Welcome();
+  welcome = new Welcome();
   f = new Frame();
   c = new Clock();
   world = new World();
@@ -83,6 +96,7 @@ void setup()
   scan = new Scan();
   fingerprint = new Fingerprint();
   weapons = new Weapons();
+  message = new Message();
   
 //  satellite = new SoundFile(this, "satellite.wav");
 

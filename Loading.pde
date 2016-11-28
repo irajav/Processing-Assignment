@@ -19,7 +19,7 @@ class Loading
       
       if(w == 200)
       {
-        wel.welcome();
+        welcome.welcome();
       }
       else
       {

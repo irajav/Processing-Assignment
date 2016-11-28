@@ -3,6 +3,7 @@ class Welcome
   float x = width/2;
   float y = height/2;
   
+
   void welcome()
   {
     fill(0);
@@ -12,8 +13,9 @@ class Welcome
     g.grid();
     textSize(15);
     fill(255);
-    text("Welcome Human", x-100, y-200);
 
+
+    message.message();
     
     if(mouseX > x-330 && mouseX < x-230 && mouseY > y-140 && mouseY < y-60) 
     {
@@ -36,9 +38,6 @@ class Welcome
       warning.warning();
     }
     
-
- 
-
     weapons.weapons();
     
     button1();
@@ -120,5 +119,6 @@ class Welcome
     endShape(CLOSE);
   }
     
+
 
 }

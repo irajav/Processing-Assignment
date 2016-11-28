@@ -7,8 +7,9 @@ class Weapons
   {
     
 
-      font = createFont("Arial",15,true);
-  textFont(font,15);  
+  font = loadFont("CalifornianFB-Reg-48.vlw");
+  textFont(font, 20);
+   fill(#1F7BF0);
 
     int passedTime = millis() - time;
     
