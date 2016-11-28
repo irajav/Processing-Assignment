@@ -14,6 +14,7 @@ class Welcome
     textSize(15);
     fill(255);
 
+    graph();
 
     message.message();
     
@@ -38,12 +39,17 @@ class Welcome
       warning.warning();
     }
     
+    
     weapons.weapons();
+    
+    
     
     button1();
     button2();
     button3();
     button4();
+    
+
  
   }
   
@@ -117,6 +123,40 @@ class Welcome
     vertex(50, 80);
     vertex(30, 60);
     endShape(CLOSE);
+  }
+  
+  void graph()
+  {
+    textSize(10);
+    line(x+340,40,x+340,260);
+    line(x+340,260, x+560, 260);
+    
+    stroke(#1F7BF0);
+    line(x+360,70, x+380,230);
+    ellipse(x+360,70,5,5);
+    text("90%", x+370, 70);
+    
+    line(x+380,230, x+410,110);
+    ellipse(x+380,230,5,5);
+    text("10%", x+390, 230);
+    
+    line(x+410,110, x+430, 130);
+    ellipse(x+410,110,5,5);
+    text("60%", x+400,110);
+    
+    line(x+430, 130, x+470, 100);
+    ellipse(x+430, 130, 5,5);
+    text("45%", x+440, 130);
+    
+    line(x+470,100, x+530, 180);
+    ellipse(x+470,100,5,5);
+    text("65%", x+480, 100);
+    
+    line(x+530, 180, x+550, 90);
+    ellipse(x+530,180,5,5);
+    text("30%", x+540, 180);
+    ellipse(x+550, 90, 5,5);
+    text("70%", x+560, 90);
   }
     
 
