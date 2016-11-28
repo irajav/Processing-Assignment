@@ -13,8 +13,7 @@ class Scan
     
     
     stroke(255);
-    
-    //head
+        //head
     ellipse(x-30,y-260, 40,50);
     
     //body
@@ -67,6 +66,8 @@ class Scan
    //right arm
     ellipse(x+22, y-170,10,90);
     
+
+
 
     stroke(255,137,216);
     line(x-120, y-300, x-120, y+60);

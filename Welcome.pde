@@ -32,12 +32,20 @@ class Welcome
       warning.warning();
     }
     
+            
+    weapons();    
     
     button1();
     button2();
     button3();
     button4();
-        
+ 
+  }
+  
+    void weapons()
+  {
+    
+    image(img3, 70, 50, 120,120);
   }
   
   void button1()
@@ -72,6 +80,7 @@ class Welcome
     vertex(50, 80);
     vertex(30, 60);
     endShape(CLOSE);
+    
   }
   
   void button3()
@@ -102,4 +111,5 @@ class Welcome
     endShape(CLOSE);
   }
     
+
 }

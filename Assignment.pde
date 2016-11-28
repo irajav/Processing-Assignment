@@ -9,12 +9,16 @@ Frame f;
 Grid g;
 PImage img;
 PImage img2;
+PImage img3;
 Clock c;
 World world;
 Warning warning;
 Scan scan;
 
 boolean b;
+
+String[] file = {"weapon1.jpg", "weapon2.jpg", "weapon3.png", "weapon4.png", "weapon5.png"};
+PImage[] images = new PImage[file.length];
 
 void setup()
 {
