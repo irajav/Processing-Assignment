@@ -14,6 +14,7 @@ Clock c;
 World world;
 Warning warning;
 Scan scan;
+Fingerprint fingerprint;
 
 
 boolean b;
@@ -45,6 +46,7 @@ void setup()
   g = new Grid();
   warning = new Warning();
   scan = new Scan();
+  fingerprint = new Fingerprint();
   
 //  satellite = new SoundFile(this, "satellite.wav");
 

@@ -29,10 +29,7 @@ class Welcome
     }
     else if( mouseX > x+295 && mouseX < x+385 && mouseY > y+50 && mouseY < y+115)
     {
-      noStroke();
-      fill(#C7E1FA);
-      rect(x-110,y-10,140,200);
-      image(img3, x-110,y-10, 140,200);
+      fingerprint.fingerprint();
     }
     else
     {
