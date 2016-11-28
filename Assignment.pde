@@ -29,6 +29,7 @@ void setup()
   b = false;
   img = loadImage("world.png");
   img2 = loadImage("skeleton.jpg");
+  img3 = loadImage("fingerprint.png");
   
   for(int i = 0; i < 200; i++)
   {

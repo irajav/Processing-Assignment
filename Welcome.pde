@@ -27,6 +27,13 @@ class Welcome
     {
       scan.scan();
     }
+    else if( mouseX > x+295 && mouseX < x+385 && mouseY > y+50 && mouseY < y+115)
+    {
+      noStroke();
+      fill(#C7E1FA);
+      rect(x-110,y-10,140,200);
+      image(img3, x-110,y-10, 140,200);
+    }
     else
     {
       warning.warning();
@@ -84,6 +91,7 @@ class Welcome
   void button3()
   {    
     translate(x-90, y-565);
+    textSize(15);
     text("LAB SCAN", 35,55);
     beginShape();
     beginShape();
@@ -101,6 +109,9 @@ class Welcome
   {
     
     translate(x-550, y-205);
+    textSize(15);
+    text("FINGER", 45,50);
+    text("PRINT", 45,65);
     beginShape();
     vertex(30, 20);
     vertex(90, 20);
