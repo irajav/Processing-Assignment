@@ -32,8 +32,9 @@ class Welcome
       warning.warning();
     }
     
-            
-    weapons();    
+
+ 
+
     
     button1();
     button2();
@@ -42,19 +43,14 @@ class Welcome
  
   }
   
-    void weapons()
-  {
-    
-    image(img3, 70, 50, 120,120);
-  }
-  
   void button1()
   {
         
     stroke(#1F7BF0);
     noFill();
     translate(x-340, y-150);
-    //text("CLOCK", 35, 50);
+    textSize(15);
+    text("CLOCK", 45, 55);
     beginShape();
     vertex(30, 20);
     vertex(90, 20);
@@ -72,6 +68,8 @@ class Welcome
   {
     
     translate(x-800, y-200);
+    textSize(15);
+    text("MAP", 55,55);
     beginShape();
     vertex(30, 20);
     vertex(90, 20);
@@ -86,6 +84,8 @@ class Welcome
   void button3()
   {    
     translate(x-90, y-565);
+    text("LAB SCAN", 35,55);
+    beginShape();
     beginShape();
     vertex(30, 20);
     vertex(90, 20);
