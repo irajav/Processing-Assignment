@@ -14,6 +14,7 @@ class Fingerprint
       fill(#C7E1FA);
       rect(x-110,y-10,140,200);
       image(img3, x-110,y-10, 140,200);
+      text("Flat Right Thumb", x-110, y-20);
       
           
     fill(#1F7BF0);      

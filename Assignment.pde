@@ -15,11 +15,16 @@ World world;
 Warning warning;
 Scan scan;
 Fingerprint fingerprint;
+Weapons weapons;
 
+  int time;
+  int imageIndex = 0;
+  int totalTime = 3000;
+  
 
 boolean b;
 
-String[] file = {"weapon1.jpg", "weapon2.jpg", "weapon3.png", "weapon4.png", "weapon5.png"};
+String[] file = {"weapon1.png", "weapon2.png", "weapon3.png", "weapon4.png", "weapon5.png"};
 PImage[] images = new PImage[file.length];
 
 void setup()
@@ -31,11 +36,21 @@ void setup()
   img = loadImage("world.png");
   img2 = loadImage("skeleton.jpg");
   img3 = loadImage("fingerprint.png");
+
   
   for(int i = 0; i < 200; i++)
   {
     myStars[i] = new Stars(random(width), random(height));
   }
+  
+  
+  
+      time = millis();
+    
+      for(int i = 0; i<file.length; i++)
+    {
+      images[i] = loadImage(file[i]);
+    }
   
   e = new Enter();
   l = new Loading();
@@ -47,6 +62,7 @@ void setup()
   warning = new Warning();
   scan = new Scan();
   fingerprint = new Fingerprint();
+  weapons = new Weapons();
   
 //  satellite = new SoundFile(this, "satellite.wav");
 

@@ -39,6 +39,7 @@ class Welcome
 
  
 
+    weapons.weapons();
     
     button1();
     button2();

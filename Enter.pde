@@ -13,7 +13,7 @@ class Enter
     ang3 += 3;
     
 
-   
+  
     noStroke();
     fill(80);
     ellipse(x,y,100,100);
