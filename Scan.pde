@@ -4,7 +4,7 @@ class Scan
   float y = height/2 + 200;
   float w = 50;
   float speed = 20;
-      float rectY = y-300;   
+  float rectY = y-300;   
   
   void scan()
   {
@@ -13,7 +13,7 @@ class Scan
     
     
     stroke(255);
-        //head
+    //head
     ellipse(x-30,y-260, 40,50);
     
     //body

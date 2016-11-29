@@ -6,30 +6,25 @@ class Loading
   
   void loading()
   {
-    
-     
-        
-        
-      noStroke();
-      fill(20);
-      rect(0,0,width,height);
-      
-      for(int i = 0; i <200; i++)
-      {
-        myStars[i].show();
-      }
-      
 
+    noStroke();
+    fill(20);
+    rect(0,0,width,height);
+     
+    for(int i = 0; i <200; i++)
+    {
+       myStars[i].show();
+    }
       
-      if(w == 200)
-      {
-        welcome.welcome();
-      }
-      else
-      {
-        loadingbar();
-        
-      }
+         
+    if(w == 200)
+    {
+      welcome.welcome();
+    }
+    else
+    {
+      loadingbar();       
+    }
 
   }
   

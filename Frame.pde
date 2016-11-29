@@ -8,9 +8,6 @@ class Frame
  
     int x2frame = 20;
     int y2frame = 20;
-    
-    int cols = 15;
-    int rows = 15;
 
     stroke(255,137,216);
     strokeWeight(1);

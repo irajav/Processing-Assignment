@@ -20,15 +20,22 @@ Weapons weapons;
 Message message;
 
 boolean b;
-  
-
-String[] file = {"weapon1.png", "weapon2.png", "weapon3.png", "weapon4.png", "weapon5.png"};
+ 
+//weapons
+String[] file = {
+  "weapon1.png", 
+  "weapon2.png", 
+  "weapon3.png", 
+  "weapon4.png", 
+  "weapon5.png"
+  };
 PImage[] images = new PImage[file.length];
 
-  int time;
-  int imageIndex = 0;
-  int totalTime = 3000;
+int time;
+int imageIndex = 0;
+int totalTime = 3000;
 
+//gun descriptions
 String[] guns = {
   " Name: Beretta Xtrema 2 \n Manufacturer: Fabbrica d'Armi Pietro Beretta \n Cartride: 12 gauge", 
   " Name: Blaser F3 \n Manufacturer: Blaser Jagdwaffen \n Cartridge: 12 gauge 20 gauge 28 gauge",
@@ -39,6 +46,7 @@ String[] guns = {
   
 int index = 0;
 
+//welcome message
 String[] wel = {
   "Welcome back, Human!", 
   "Accessing data...",
@@ -65,18 +73,20 @@ void setup()
   
   
   
-      time = millis();
+  time = millis();
     
-      for(int i = 0; i<file.length; i++)
-    {
-      images[i] = loadImage(file[i]);
-    }
+  for(int i = 0; i<file.length; i++)
+  {
+    images[i] = loadImage(file[i]);
+  }
   
-  
-      
-  
+  satellite = new SoundFile(this, "satellite.wav");
+  mothership = new SoundFile(this, "mothership.wav");
+
+  mothership.play();
 
   
+
   e = new Enter();
   l = new Loading();
   welcome = new Welcome();
@@ -90,19 +100,13 @@ void setup()
   weapons = new Weapons();
   message = new Message();
   
-  satellite = new SoundFile(this, "satellite.wav");
-  mothership = new SoundFile(this, "mothership.wav");
-
-  mothership.play();
-
-
 }
 
 void draw()
 {   
-   noStroke();
-   fill(0,20);
-   rect(0,0,width,height);
+  noStroke();
+  fill(0,20);
+  rect(0,0,width,height);
   for(int i = 0; i <200; i++)
   {
     myStars[i].show();
@@ -114,18 +118,17 @@ void draw()
    if(b == true)
   {
     l.loading();
-    
-
-
   }
   
+  
 }
-      void mousePressed()
+
+void mousePressed()
+{
+  if(mouseX > (width/2)-50 && mouseX < (width/2)+50 && mouseY > (height/2)-50 && mouseY < (height/2)+50)
   {
-    if(mouseX > (width/2)-50 && mouseX < (width/2)+50 && mouseY > (height/2)-50 && mouseY < (height/2)+50)
-    {
-      b=!b;
-    }
+    b=!b;
   }
+}
 
   

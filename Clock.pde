@@ -55,8 +55,7 @@ class Clock
     strokeWeight(6);
     arc(cx,cy,150,150, radians(70), radians(360));
     
-    // Angles for sin() and cos() start at 3 o'clock;
-    // subtract HALF_PI to make them start at the top
+
     float map_s = map(second(), 0, 60, 0, TWO_PI) - HALF_PI;
     float map_m = map(minute() + norm(second(), 0, 60), 0, 60, 0, TWO_PI) - HALF_PI; 
     float map_h = map(hour() + norm(minute(), 0, 60), 0, 24, 0, TWO_PI * 2) - HALF_PI;
@@ -73,7 +72,8 @@ class Clock
     // Draw the minute ticks
     strokeWeight(3);
     beginShape(POINTS);
-    for (int a = 0; a < 360; a+=6) {
+    for (int a = 0; a < 360; a+=6) 
+    {
       float angle = radians(a);
       float x = cx + cos(angle) * secondsRadius;
       float y = cy + sin(angle) * secondsRadius;
