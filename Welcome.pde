@@ -128,10 +128,12 @@ class Welcome
   
   void graph()
   {
-    textSize(10);
+    
     line(x+340,40,x+340,260);
     line(x+340,260, x+560, 260);
+    text("STATISTICS", x+400, 280);
     
+    textSize(10);
     stroke(#1F7BF0);
     line(x+360,70, x+380,230);
     ellipse(x+360,70,5,5);
