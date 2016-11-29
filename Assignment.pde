@@ -1,5 +1,6 @@
 import processing.sound.*;
 SoundFile satellite;
+SoundFile mothership;
 
 Stars[] myStars = new Stars[200];
 Enter e;
@@ -19,14 +20,14 @@ Weapons weapons;
 Message message;
 
 boolean b;
-
-  int time;
-  int imageIndex = 0;
-  int totalTime = 3000;
   
 
 String[] file = {"weapon1.png", "weapon2.png", "weapon3.png", "weapon4.png", "weapon5.png"};
 PImage[] images = new PImage[file.length];
+
+  int time;
+  int imageIndex = 0;
+  int totalTime = 3000;
 
 String[] guns = {
   " Name: Beretta Xtrema 2 \n Manufacturer: Fabbrica d'Armi Pietro Beretta \n Cartride: 12 gauge", 
@@ -74,16 +75,7 @@ void setup()
   
       
   
-    for (int i = 0; i < guns.length; i++)
-    {
-      printArray(guns);
-    }
-    
-    for(int i = 0; i < wel.length; i++)
-    {
-      printArray(wel);
-    }
-  
+
   
   e = new Enter();
   l = new Loading();
@@ -99,6 +91,9 @@ void setup()
   message = new Message();
   
   satellite = new SoundFile(this, "satellite.wav");
+  mothership = new SoundFile(this, "mothership.wav");
+
+  mothership.play();
 
 
 }
@@ -119,6 +114,7 @@ void draw()
    if(b == true)
   {
     l.loading();
+    
 
 
   }
