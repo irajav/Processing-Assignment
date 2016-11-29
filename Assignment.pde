@@ -1,5 +1,5 @@
-//import processing.sound.*;
-//SoundFile satellite;
+import processing.sound.*;
+SoundFile satellite;
 
 Stars[] myStars = new Stars[200];
 Enter e;
@@ -98,7 +98,7 @@ void setup()
   weapons = new Weapons();
   message = new Message();
   
-//  satellite = new SoundFile(this, "satellite.wav");
+  satellite = new SoundFile(this, "satellite.wav");
 
 
 }
@@ -119,6 +119,7 @@ void draw()
    if(b == true)
   {
     l.loading();
+
 
   }
   

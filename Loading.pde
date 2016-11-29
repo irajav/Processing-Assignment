@@ -6,6 +6,10 @@ class Loading
   
   void loading()
   {
+    
+     
+        
+        
       noStroke();
       fill(20);
       rect(0,0,width,height);
@@ -31,6 +35,10 @@ class Loading
   
   void loadingbar()
   {
+    
+   
+    satellite.play();
+    
       stroke(255);
       noFill();
       rect(width/2-100,250,200,20);
