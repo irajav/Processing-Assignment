@@ -8,7 +8,6 @@ class Clock
     float secondsRadius;
     float minutesRadius;
     float hoursRadius;
-    float clockDiameter;
     color c = color(255,137,216);
     int h= hour();        // 0-23
     int m= minute();      // 0-59
@@ -24,7 +23,6 @@ class Clock
     secondsRadius = radius * 0.4;
     minutesRadius = radius * 0.35;
     hoursRadius = radius * 0.35;
-    clockDiameter = radius * 0.2;
     
     
     stroke(c);
